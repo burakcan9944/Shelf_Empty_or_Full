@@ -67,27 +67,27 @@ while cap.isOpened():
             center_x = (x1 + x2) / 2
             center_y = (y1 + y2) / 2
 
-            if cv2.pointPolygonTest(polygon_points_raf_1, (center_x, center_y), False) >= 0:
+            if cv2.pointPolygonTest(polygon_points_shelf_1, (center_x, center_y), False) >= 0:
                 detected_labels_shelf_1.append(label)
                 cv2.rectangle(frame, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 0), 2)
                 cv2.circle(frame, (int(center_x), int(center_y)), 5, (0, 255, 0), -1)
 
-            elif cv2.pointPolygonTest(polygon_points_raf_2, (center_x, center_y), False) >= 0:
+            elif cv2.pointPolygonTest(polygon_points_shelf_2, (center_x, center_y), False) >= 0:
                 detected_labels_shelf_2.append(label)
                 cv2.rectangle(frame, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 0), 2)
                 cv2.circle(frame, (int(center_x), int(center_y)), 5, (0, 255, 0), -1)
 
-            elif cv2.pointPolygonTest(polygon_points_raf_3, (center_x, center_y), False) >= 0:
+            elif cv2.pointPolygonTest(polygon_points_shelf_3, (center_x, center_y), False) >= 0:
                 detected_labels_shelf_3.append(label)
                 cv2.rectangle(frame, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 0), 2)
                 cv2.circle(frame, (int(center_x), int(center_y)), 5, (0, 255, 0), -1)
 
-            elif cv2.pointPolygonTest(polygon_points_raf_4, (center_x, center_y), False) >= 0:
+            elif cv2.pointPolygonTest(polygon_points_shelf_4, (center_x, center_y), False) >= 0:
                 detected_labels_shelf_4.append(label)
                 cv2.rectangle(frame, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 0), 2)
                 cv2.circle(frame, (int(center_x), int(center_y)), 5, (0, 255, 0), -1)
 
-            elif cv2.pointPolygonTest(polygon_points_raf_5, (center_x, center_y), False) >= 0:
+            elif cv2.pointPolygonTest(polygon_points_shelf_5, (center_x, center_y), False) >= 0:
                 detected_labels_shelf_5.append(label)
                 cv2.rectangle(frame, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 0), 2)
                 cv2.circle(frame, (int(center_x), int(center_y)), 5, (0, 255, 0), -1)
